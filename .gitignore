@@ -1,0 +1,31 @@
+# 음성 파일 (용량 크고 개인정보 포함 → GitHub에 올리지 않음)
+audio/raw/*
+audio/processed/*
+!audio/raw/.gitkeep
+!audio/processed/.gitkeep
+*.mp3
+*.m4a
+*.wav
+*.mp4
+
+# 클로바노트 원본 전사본 (참석자 이름·회사 내용 포함)
+transcripts/raw/*
+!transcripts/raw/.gitkeep
+
+# 분석 결과 (재생성 가능)
+data/output/*
+!data/output/.gitkeep
+
+# 비밀번호·키
+.env
+*.key
+*.pem
+token*.json
+credentials*.json
+
+# 시스템/개발 파일
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
